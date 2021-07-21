@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-strip ~/texasSDK/board-support/rootfs/lib/*.so
