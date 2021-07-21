@@ -1,0 +1,302 @@
+body {
+  /*Padrão de background para o projeto por enquanto*/
+  /*background-image: linear-gradient(to top right, #00ff00, #003300);*/
+  /*background-image: linear-gradient(to left top, #2a2f36, #2a2f36, #2a2e37, #2b2e37, #2b2d37);*/
+  background-image: url("background.png");
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Tahoma, Geneva, sans-serif;*/
+}
+
+.BoxLayout {
+  border-radius: 10px;
+}
+
+#box1, #box2_1, #box2_2 {
+background: rgb(75,71,71);
+background: linear-gradient(315deg, rgba(75,71,71,0.8) 0%, rgba(52,44,44,1) 100%);
+border: 4px solid #19bbd5;
+}
+
+#box1 {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center;*/
+  margin: 0px 0px 10px 0px;
+}
+
+.filho_box1 {
+  /*border: 1px solid black;*/
+}
+
+#c1 {
+  width: 60%;
+}
+#c2 {
+  width: 25%;
+}
+#c3 {
+  width: 15%;
+}
+
+#textLogo {
+  /*background-color: coral;*/
+  width: 60%;
+}
+
+#textLogo h1, h4 {
+  font-family: Lato;
+}
+
+#textLogo h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 60px;
+  line-height: 0.5;
+}
+
+#textLogo h4 {
+  /*font-weight: bold;*/
+  font-style: italic;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+#opcoes {
+	padding: 0px;
+	margin: 0px;
+	/*background-color: #808080;*/
+  background-color: rgba(128, 128, 128, 0.8);
+	list-style-type: none;
+	/*width: 100%;*/ /*isso causa a sobreposição da tabela do div*/
+  border: 1px solid #181818;
+}
+
+#opcoes li a {
+  display: block;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+  /*font-weight: bold;*/
+  font-size: 20px;
+  padding: 3px 0px 3px 3px;
+}
+
+#opcoes li a.target{
+  background-color: #fff;
+  color: black;
+  font-style: italic;
+}
+
+#opcoes li {
+  text-align: left;
+  border-bottom: 1px solid #181818;
+}
+
+#opcoes li:last-child {
+  border-bottom: none;
+}
+
+/* Change the link color on hover */
+#opcoes li a:hover {
+  background-color: #fff;
+  color: black;
+  /*font-style: italic; /*deixar apenas para o elemento ativado*/
+}
+
+/*#box1 {background-color: OrangeRed;}*/
+
+#box2 {
+  /*padding: 0px;*/
+	/*background-color: DarkOrange;*/
+  height: 75vh;
+	/*overflow-y: hidden;*/
+  display: flex; 
+  justify-content: center;
+}
+
+.Horizontal {
+	border: 1px solid white;
+  height: 100%;
+  /*width: 100%;*/
+}
+
+.titulo {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.49343487394957986) 100%);
+  /*border: 1px solid white;*/
+  padding: 5px 0px 5px 10px;
+  font-weight: bold;
+  /*font-style: italic;*/
+  font-size: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+input {
+  width: 80%;
+}
+
+#atribuicao_ip, #atribuicao_sgbd {
+  width: 100%;
+  /*border-collapse: collapse; /*depois sai*/
+  /*table-layout: fixed;*/
+}
+
+/*Substituir por table apenas depois*/
+#configs_ip, #config_database, #atuadores {
+  width: 100%;
+  /*border-collapse: collapse; /*depois sai*/
+  table-layout: fixed;
+}
+
+table tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 5px;
+}
+
+tr:hover {background-color: rgba(255, 255, 255, 0.3);}
+
+table, th, td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  /*border: 1px solid black; /*depois sai*/
+}
+
+.buttons {
+  /*border: 1px solid pink; /*depois sai*/
+  display: flex;
+  justify-content: center;
+}
+
+button {
+	/*box-shadow: 1px 1px 20px 0px #000000;*/
+	background: #D8E0E9;
+	background-image: linear-gradient(to bottom, #D8E0E9, #6E727A);
+	background-color:#7892c2;
+	border-radius:7px;
+	border: solid #2E3032 1px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	/*font-family:Arial;*/
+	/*font-size:19px;*/
+	padding: 8px 10px 8px 10px;
+	text-decoration:none;
+	/*text-shadow: 1px 1px 20px #000000;*/
+	text-align: center;
+}
+button:hover {
+	background-image: linear-gradient(to bottom, #00b300, #04BF10);
+	background: #00b300;
+	border: solid #FFFFFF 1px;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#box2_1 {
+  width: 25%;
+}
+
+#box2_2 {
+  width: 50%;
+  margin: 0px 9px 0px 9px;
+  overflow: auto;
+}
+
+#box2_3 {
+  background-color: #8f9091;
+  border: 4px solid white;
+  color: black;
+  padding: 0px 5px 0px 5px;
+  width: 25%;
+  overflow: auto;
+}
+
+.menuItem {
+  display: none;
+}
+
+#logKernel p {
+  font: arial;
+  font-size: 14px;
+  background-color: #8f9091 ;
+}
+
+#bemvindo {
+  border: 3px dashed #8f9091;
+  width: 90%;
+  height: 20%;
+}
+
+#preench1 {
+  /*border: 1px solid white;*/
+  height: 40%;
+}
+
+#bemvindo h1, h3 {
+  text-align: center;
+  /*font-family: "Verdana";*/
+}
+
+#bemvindo h3 {
+  font-style: italic;
+}
+
+
+/*SWICH*/
+.onoffswitch {
+    position: relative; width: 99px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 42px; padding: 0; line-height: 42px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    text-align: left;
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #000000; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 20px; margin: 11px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 53px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}

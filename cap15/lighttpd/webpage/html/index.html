@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-BR">
+		<meta charset="UTF-8">
+		<title>Página de configuração do equipamento</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="aplication/aplication.js"></script>
+	</head>
+<body>
+
+
+
+<div class="BoxLayout Vertical" id="box1">
+	<div id="textLogo">
+		<h1>MiniLinux-IoT<sup>®</sup</h1>
+		<h4>Interface web de configuração e monitoramento remotos</h4>
+	</div>
+	<div id="c2"></div>
+	<img src="images/Icone2.png" alt="Logo">
+</div>
+
+<div class="BoxLayout Vertical" id="box2">
+	<div class="BoxLayout Horizontal" id="box2_1">
+		<h2> Menu </h2>
+		<ul id="opcoes">
+		  <li><a href="#" onclick="atualizapag('op1')">Rede</a></li>
+		  <li><a href="#" onclick="atualizapag('op2')">Banco de dados</a></li>
+		  <li><a href="#" onclick="atualizapag('op3')">Gráficos de tendência</a></li>
+		  <li><a href="#" onclick="atualizapag('op4')">Atuadores</a></li>
+		  <li><a href="#" onclick="atualizapag('op5')">Logs</a></li>
+		  <li><a href="#">Configuração 7</a></li>
+		  <li><a href="#">Configuração 8</a></li>
+		  <li><a href="#">...</a></li>
+		</ul>
+	</div>
+	<div class="BoxLayout Horizontal" id="box2_2">
+		<div id="apresentacao" style="height: 100%">
+			<div id="preench1"></div>
+			<div id="bemvindo">
+				<h1>Bem vindo!</h1>
+				<h3>Para acessar as configurações, clique no menu à esquerda.</h3>
+			</div>
+		</div>
+		<div id="op1" class="menuItem">
+			<div class="titulo">Método de aquisição de IP: </div>
+			<br>
+			<table id="atribuicao_ip">
+				<tr>
+					<td><input type="radio" id="dinamico" name="getIP" value="dinamico" checked onclick="permiteIP()"></td>
+					<td><label for="dinamico">DHCP (dinâmico)</label></td>
+				</tr>
+				<tr>
+					<td><input type="radio" id="estatico" name="getIP" value="estatico" onclick="permiteIP()"></td>
+					<td><label for="estatico">Estático</label></td>
+				</tr>
+			</table>
+			<br>
+			<div class="titulo">Protocolos: </div>
+			<br>
+			<table id="configs_ip">
+				<tr>
+					<td><label for='ip'>Endereço IP: </label></td>
+					<td><input type = "text" id='ip' name = "ip" value="192.168.0.164" disabled="true"></td>
+				</tr>
+				<tr>
+					<td><label for='mask'>Máscara:</label></td>
+					<td><input type = "text" id='mask' name = "mask" value="255.255.255.0" disabled="true"></td>
+				</tr>
+				<tr>
+					<td><label for='gateway'>Gateway: </label></td>
+					<td><input type = "text" id='gateway' name = "gateway" value="192.168.0.1" disabled="true"></td>
+				</tr>
+				<tr>
+					<td><label for='dns1'>DNS principal: </label></td>
+					<td><input type = "text" id='dns1' name = "dns1" value="1.1.1.1" disabled="true"></td>
+				</tr>
+				<tr>
+					<td><label for='dns2'>DNS alternativo: </label></td>
+					<td><input type = "text" id='dns2' name = "dns2" value="8.8.8.8" disabled="true"></td>
+				</tr>
+			</table>
+	    	<br>
+			<div class="buttons">
+				<button type="button" onclick="loadDoc()">Alterar</button>
+				<button type="button">Resetar</button>
+			</div>
+		</div>
+		<div id="op2" class="menuItem">
+			<div class="titulo">SGDB escolhido: </div>
+			<br>
+			<table id="atribuicao_sgbd">
+				<tr>
+					<td><input type="radio" id="mysql" name="getSGBD" value="mysql" onclick="mudaInfoDB()"></td>
+					<td><label for="mysql">MySQL</label></td>
+				</tr>
+				<tr>
+					<td><input type="radio" id="sqlserver" name="getSGBD" value="sqlserver" onclick="mudaInfoDB()"></td>
+					<td><label for="sqlserver">SQLServer</label></td>
+				</tr>
+				<tr>
+					<td><input type="radio" id="mongodb" name="getSGBD" value="mongodb" onclick="mudaInfoDB()"></td>
+					<td><label for="mongodb">MongoDB</label></td>
+				</tr>
+			</table>
+			<br>
+			<div class="titulo">Configuração: </div>
+			<br>
+			<table id="config_database">
+				<tr>
+					<td><label for="server">IP do servidor:</label></td>
+					<td><input type="text" id="server" name="server"></td>
+				</tr>
+				<tr>
+					<td><label for="code">Porta:</label></td>
+					<td><input type="text" id="code" name="code"></td>
+				</tr>
+				<tr>
+					<td><label for="db_freq_write">Intervalo de escrita:</label></td>
+					<td>
+						<select name="db_freq_write" id="db_freq_write">
+							<option value="200ms">200 ms</option>
+							<option value="500ms">500 ms</option>
+							<option value="1s">1 s</option>
+							<option value="2s">2 s</option>
+							<option value="5s">5 s</option>
+							<option value="10s">10 s</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<div class="buttons">
+				<button type="button">Alterar</button>
+				<button type="button">Resetar</button>
+			</div>
+		</div>
+		<div id="op3" class="menuItem">
+			<div class="titulo">Curva de tendência do sensor 1: </div>
+			<br>
+			<div id="chart_div" ></div>
+			<br>			
+			<div class="titulo" id="divConsumo">Consumo de recursos: </div>
+			<br>
+			<div id="chart_div2" style="width: 100%; height: 60%; "></div>
+			<br>
+		</div>
+		<div id="op4" class="menuItem">
+			<div class="titulo">Estado: </div>
+			<br>
+			<table id="atuadores">
+				<tr>
+					<td>
+						<div class="onoffswitch" id="primeiro_switch">
+						    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+						    <label class="onoffswitch-label" for="myonoffswitch">
+						        <span class="onoffswitch-inner"></span>
+						        <span class="onoffswitch-switch"></span>
+						    </label>
+						</div>
+					</td>
+					<td><label for="primeiro_switch">LED 1</label></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="onoffswitch" id="segundo_switch">
+						    <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
+						    <label class="onoffswitch-label" for="myonoffswitch2">
+						        <span class="onoffswitch-inner"></span>
+						        <span class="onoffswitch-switch"></span>
+						    </label>
+						</div>
+					</td>
+					<td><label for="segundo_switch">LED 2</label></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="onoffswitch" id="terceiro_switch">
+						    <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0" checked>
+						    <label class="onoffswitch-label" for="myonoffswitch3">
+						        <span class="onoffswitch-inner"></span>
+						        <span class="onoffswitch-switch"></span>
+						    </label>
+						</div>
+					</td>
+					<td><label for="terceiro_switch">ATUADOR 1</label></td>
+				</tr>
+			</table>
+		</div>
+		<div id="op5" class="menuItem">
+			<div class="titulo">Logs do kernel: </div>
+			<br>
+			<div id="logKernel">
+			  <p><iframe id="textoLogKernel" src="dmesg_BBB.txt" frameborder="0" height="480"
+			      width="100%"></iframe></p>
+			</div>
+		</div>
+	</div>
+	<div class="BoxLayout Horizontal" id="box2_3">
+		<h2>Texto de ajuda</h2>
+		<p>Esse quadro pode ser reservado para textos explicatórios sobre as opções, tal como algumas páginas de roteadores também tem (Ex.: TP-LINK e D-LINK).</p>
+	</div>
+</div>
+
+</body>
+</html>
