@@ -1,2 +1,4 @@
-# Curso-de-Linux-Embarcado
-Uma documentação completa sobre o processo de desenvolvimento de um sistema embarcado baseado em Linux, envolvendo teoria (conceitos) e prática (demonstrações).
+
+
+<h1 align="center">Abordagem teórica e prática da aplicação de Linux em sistemas embarcados: Um tutorial para a configuração da BeagleBone Black</h1>
+
