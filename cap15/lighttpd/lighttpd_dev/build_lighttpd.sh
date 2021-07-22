@@ -40,4 +40,4 @@ make -j9
 # instalar
 make -j9 install
 
-# LEMBRAR DE COPIAR O SCRIPT install.sh JUNTO COM OS OUTROS
+# LEMBRAR DE COPIAR O SCRIPT install_lighttpd.sh JUNTO COM OS OUTROS
