@@ -1,1 +1,0 @@
-arm-linux-gnueabihf-g++  -g   CMakeFiles/sensorDataMySQL.dir/main.cpp.o  -o sensorDataMySQL  -L/usr/lib/mysqlcppconn8_ARM -Wl,-rpath,/usr/lib/mysqlcppconn8_ARM -lmysqlcppconn8 
