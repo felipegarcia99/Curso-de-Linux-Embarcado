@@ -1,0 +1,3 @@
+/home/felipe/texasSDK/codigos/aplicacao_final_mysql_BBB/build/CMakeFiles/rebuild_cache.dir
+/home/felipe/texasSDK/codigos/aplicacao_final_mysql_BBB/build/CMakeFiles/sensorDataMySQL.dir
+/home/felipe/texasSDK/codigos/aplicacao_final_mysql_BBB/build/CMakeFiles/edit_cache.dir
