@@ -27,14 +27,7 @@ Tabela de conteúdos
 
 ## _Resumo_
 
-Com o advento da tecnologia, visível e ubíqua, veio, também, a necessidade de produção de mais dispositivos IoT, que nada mais são que sistemas embarcados, muitos deles, microprocessados. Juntamente com isso, nasce a oportunidade de mais vagas para profissionais de engenharia da
-computação. 
-
-Porém, é notável que muitos acadêmicos da área desconhecem o passo a passo de construção de um sistema embarcado microprocessado, assim como o conceito de Linux embarcado. 
-
-Este trabalho tem como objetivo desenvolver uma documentação que contenha o desenvolvimento de um sistema embarcado microprocessado em Linux, usando como base a placa de desenvolvimento BeagleBone Black. 
-
-O processo será descrito na forma de relatório, utilizando pesquisa bibliográfica e prática com o ambiente de desenvolvimento Texas Instruments.
+> Com o advento da tecnologia, visível e ubíqua, veio, também, a necessidade de produção de mais dispositivos IoT, que nada mais são que sistemas embarcados, muitos deles, microprocessados. Juntamente com isso, nasce a oportunidade de mais vagas para profissionais de engenharia da computação. Porém, é notável que muitos acadêmicos da área desconhecem o passo a passo de construção de um sistema embarcado microprocessado, assim como o conceito de Linux embarcado. Este trabalho tem como objetivo desenvolver uma documentação que contenha o desenvolvimento de um sistema embarcado microprocessado em Linux, usando como base a placa de desenvolvimento BeagleBone Black. O processo será descrito na forma de relatório, utilizando pesquisa bibliográfica e prática com o ambiente de desenvolvimento Texas Instruments.
 
 ## Descrição geral
 
@@ -54,7 +47,7 @@ Durante a minha pesquisa (que durou 2 anos), constatei que existem pouquíssimos
 
 Por conta disso, escolhi, como meu trabalho de conclusão de curso, escrever uma documentação sobre o processo, passo a passo, de configuração de um sistema embarcado baseado em Linux, desde a preparação do ambiente de desenvolvimento, passando pela configuração do kernel, até o desenvolvimento de aplicações embarcadas. Tudo isso foi descrito com base na minha experiência no projeto da Eletronorte, sobre o qual também consta um resumo no trabalho, de forma a exemplificar os conceitos trabalhados.
 
-Como este trabalho foi feito visando a criação de uma nova referência bibliográfica na área, é necessário que ele seja posto ao acesso público, tanto o documento PDF em si quanto os seus códigos-fonte. Portanto, este repositório contém esses respectivos itens.
+Como este trabalho foi feito visando a criação de uma nova referência bibliográfica na área, era necessário que ele fosse posto ao acesso público, tanto o documento PDF em si quanto os seus códigos-fonte. Portanto, este repositório contém esses respectivos itens.
 
 ## Trabalho de conclusão de curso
 
@@ -72,7 +65,16 @@ Eu dei o meu melhor no desenvolvimento deste trabalho para que nada saísse erra
 
 ## Autor
 
-aaaa
+Feito com ❤️ por Felipe Garcia 👋🏽
+
+<a href="https://www.linkedin.com/in/felipegarcia99/">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+<a href="malito:felipe_garcia99@hotmail.com">
+    <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />
+<a href="felipe_garcia99">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+
+
 
 ## Licença
 
