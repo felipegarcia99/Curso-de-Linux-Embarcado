@@ -58,7 +58,7 @@ Os códigos deste repositório são os usados durante o trabalho, porém, para q
 
 ## 🌞 Considerações
 
-Esse trabalho é fruto de dois anos dedicados a área de sistemas embarcados. É um grande compilado de conhecimento, e tem muito de mim nele. Foi feito com toda boa intenção de ajudar a todos aqueles que queiram ingressar na área e precisam de uma referência bibliográfica em português. Portanto, eu espero que você, que veio aqui, realmente aproveite a leitura e que esse material realmente lhe ajude. Se isso acontecer, eu me sentirei realizado.
+Esse trabalho é fruto de dois anos dedicados a área de sistemas embarcados. É um grande compilado de conhecimento, e tem muito de mim nele. Foi feito com toda boa intenção de ajudar a todos aqueles que queiram ingressar na área e precisam de uma referência bibliográfica em português. Portanto, eu espero que você, que veio aqui, realmente aproveite a leitura e que esse material lhe seja útil. Se isso acontecer, eu me sentirei realizado.
 
 ## 💬 Comentários e sugestões
 
