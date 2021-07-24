@@ -52,6 +52,8 @@ Como este trabalho foi feito visando a criação de uma nova referência bibliog
 
 ## 📖 Trabalho de conclusão de curso
 
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+
 Em síntese, esse trabalho consiste na prática da configuração de um sistema embarcado baseado em Linux usando uma placa de desenvolvimento como exemplo: a BeagleBone Black, open hardware, com vasto suporte, SDK gratuito e muito popular. 
 
 Os códigos deste repositório são os usados durante o trabalho, porém, para que façam sentido, é necessário acompanhar o mesmo, que se encontra [aqui](https://drive.google.com/file/d/1RgPurOIAYz15cTSzCj7JkGZ_NMh3Ia7j/view?usp=sharing "O TCC em si"). Caso o link esteja quebrado, favor avisar.
